@@ -1,0 +1,40 @@
+body{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    background-color: #8e5151;
+}
+
+login-form {
+  width: 480px;
+  padding: 12% 4 2;
+  margin: auto;
+  
+}
+
+Form {
+  position: relative;
+  /* Place form behind login-box*/
+  z-index: 1;
+  /* Background of form*/
+  background: #fff4f4;
+  /* Max Box Width*/
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* Submit Button*/
+input[type=submit] {
+   padding:5px 15px; background:#ccc; border:0 none;
+   cursor:pointer;
+   border-radius: 5px;
+
+}
+
+
+
+

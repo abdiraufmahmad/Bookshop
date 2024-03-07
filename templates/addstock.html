@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <div>
+     
+<head>
+    
+    <nav>
+     <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">Home</a></li>
+         {% if isAdmin == 1 %}
+         <li class="nav-item"><a href="stocklevel" class="nav-link">Stock</a></li>
+         {% endif %}
+          <li class="nav-item"><a href="/" class="nav-link">Logout</a></li>
+        </ul>
+     </nav>
+      
+    <title>Add Books</title>
+    <link rel="style sheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+ </div>
+    
+<div>
+    
+<body>
+    <!---- Form to add stock ----->
+  <form action="/stocklevel" method="post" name = "addstock">
+  <!---- Book Name ----->
+  <label for="bookname"></label><br>
+  <input type="text" id="bname" name="book_name" placeholder="Book Name"><br>
+  <!---- Author Name ----->
+  <label for="aname"></label><br>
+  <input type="text" id="author" name="author_name" placeholder="Author Name"><br><br>
+  <!----- Date Picker ---->
+   <label for="Publication"></label><br>
+  <input type="date" id="publication" name="date" placeholder="Date"
+         value = "20/11/2021"
+         min = "20/11/2021" max= "20/11/2022"><br>
+   <!--- isbn-13 --->
+  <label for="isbn"></label><br>
+  <input type="text" id="isbn-13" name="isbn_13" placeholder="ISBN-13"><br><br>
+   <!--- book description --->  
+   <label for="bookdscrp"></label><br>
+  <input type="text" id="bookdscrp" name="bookdscrp" placeholder="Book Description "><br><br>
+   <!---Picture of front cover --->   
+
+  <label for="img">Front Cover URL:</label><br>
+  <input type="text" id="image" name="photo" accept="image/*"><br>
+  <br>
+   <br>
+    <!--- Trade Price Slider ---->  
+   <label for="trade">Trade Price</label><br>
+  <input type="range" id="trade" name="trade_price" placeholder="Trade Slider"
+         min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+         <output>100</output><br><br>
+   <!---- retail price slider ---->   
+  <label for="retail">Retail Price</label><br>
+  <input type="range" id="retail" name="retail_price" placeholder="Retail"
+         min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+         <output>100</output><br><br>
+   <!--- Quantity Of Books --->   
+  <label for="quantity">Quantity</label><br>
+  <input type="range" id="quantity" name="quantity" placeholder="Quantity"
+         min = "0" max="20" oninput="this.nextElementSibling.value = this.value">
+         <output>20</output><br><br>
+  <!--- Submit Button --->
+
+      <button type = "Submit">Submit</button>
+      
+</form>
+    
+
+   
+</body>
+    
+  </div>
+    
+</html>

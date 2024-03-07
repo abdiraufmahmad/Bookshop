@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Login</title>
+    
+    <link href="{{ url_for('static', filename='styles/login.css') }}" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>
+    <!------- Login Form ------>
+    <div class = "login-box">
+    <div class = "Form">
+    
+    <form action="/user-login" method="post" name="register" class = "login-form">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" value=""><br>
+      <label for="pwd"> Password:</label><br>
+      <input type="password" id="pwd" name="pwd" value="p455w0rd"><br><br>   
+      <input type="submit" value="Submit" required>
+    </form>
+  
+    <!------- Login Form ------>
+    
+    <!----Register Button on login page ----->
+    <form method = "get" action = "register" class ="register-form">
+     <p>New user? Register Here</p>
+     <input type = "submit" value ="Submit" required>
+    </form>
+     <!----Register Button on login page ----->
+    </div>
+    </div>
+</body>
+</html> 

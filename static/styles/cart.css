@@ -1,0 +1,64 @@
+body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+/*Remove Bullet Points*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Put list in line and make them float next to each other */
+li{
+    display :inline;
+    float  : left;
+}
+
+/*Change all the links color globally*/
+a{
+    color: blue;
+}
+
+/*Add shadow & specify padding and give it background color*/
+li a{
+  
+  display: block;
+  padding: 8px;
+   background-color: #dddddd;
+   text-decoration : none;
+}
+
+/*show which link the cursor is on*/
+li a:hover {
+  background-color: #917878;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+/*width and height*/
+table, td{
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+
+/*Resized images to fit the table*/
+img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+button{
+    
+}
+
