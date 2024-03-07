@@ -1,6 +1,6 @@
-Bookshop Web Application
+Welcome to the Bookshop Web Application repository!
 
-Welcome to the Bookshop Web Application repository! This project is a dynamic, web-based bookshop platform built with Flask, a lightweight WSGI web application framework in Python. Designed to showcase a catalog of books, the application allows users to browse, search, and purchase their favorite reads. Utilizing Flask-SQLAlchemy for database management, it features a robust backend that handles inventory, user data, and transactions securely and efficiently. The frontend is crafted with HTML and CSS, offering an intuitive and responsive user interface.
+This project is a dynamic, web-based bookshop platform built with Flask, a lightweight WSGI web application framework in Python. Designed to showcase a catalog of books, the application allows users to browse, search, and purchase their favorite reads. Utilizing Flask-SQLAlchemy for database management, it features a robust backend that handles inventory, user data, and transactions securely and efficiently. The frontend is crafted with HTML and CSS, offering an intuitive and responsive user interface.
 
 Features
 Book Catalog: Browse a wide selection of books across different genres.
